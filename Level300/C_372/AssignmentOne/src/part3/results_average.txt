@@ -1,0 +1,242 @@
+Average results made from results.csv
+
+Encryption Average Times (nanoseconds) ECB
+-  Key Size 128 bits, 97mb: 1673342.56ns
+-  Key Size 192 bits, 97mb: 1701120.33ns
+-  Key Size 256 bits, 97mb: 1591472.44ns
+-  Key Size 128 bits, 488mb: 3063615.67ns
+-  Key Size 192 bits, 488mb: 2892106.67ns
+-  Key Size 256 bits, 488mb: 4749518.67ns
+-  Key Size 128 bits, 4847mb: 15023944.3ns
+-  Key Size 192 bits, 4847mb: 15909328.8ns
+-  Key Size 256 bits, 4847mb: 15819305.4ns
+-  Key Size 128 bits, 48806mb: 140000217ns
+-  Key Size 192 bits, 48806mb: 140821653ns
+-  Key Size 256 bits, 48806mb: 144256773ns
+-  Key Size 128 bits, 488251mb: 1628570736ns
+-  Key Size 192 bits, 488251mb: 1647425940ns
+-  Key Size 256 bits, 488251mb: 1651570972ns
+-  Key Size 128 bits, 1gb: 3434724185ns
+-  Key Size 192 bits, 1gb: 3498078607ns
+-  Key Size 256 bits, 1gb: 3617433079ns
+ 
+Decryption Average Times ECB
+-  Key Size 128 bits, 97mb: 1782449.11ns
+-  Key Size 192 bits, 97mb: 1768453.78ns
+-  Key Size 256 bits, 97mb: 1776074ns
+-  Key Size 128 bits, 488mb: 4131203.78ns
+-  Key Size 192 bits, 488mb: 3772013.89ns
+-  Key Size 256 bits, 488mb: 3801365.78ns
+-  Key Size 128 bits, 4847mb: 26116546.1ns
+-  Key Size 192 bits, 4847mb: 26815143.4ns
+-  Key Size 256 bits, 4847mb: 26302523.1ns
+-  Key Size 128 bits, 48806mb: 248993218ns
+-  Key Size 192 bits, 48806mb: 252890551ns
+-  Key Size 256 bits, 48806mb: 260469857ns
+-  Key Size 128 bits, 488251mb: 3015835528ns
+-  Key Size 192 bits, 488251mb: 2972486722ns
+-  Key Size 256 bits, 488251mb: 2979013555ns
+-  Key Size 128 bits, 1gb: 6343816639ns
+-  Key Size 192 bits, 1gb: 6363766592ns
+-  Key Size 256 bits, 1gb: 6377913778ns
+
+Encryption Average Times CBC
+-  Key Size 128 bits, 97mb: 1860689.78
+-  Key Size 192 bits, 97mb: 1878551
+-  Key Size 256 bits, 97mb: 1936351.78
+-  Key Size 128 bits, 488mb: 3563338
+-  Key Size 192 bits, 488mb: 3527615.67
+-  Key Size 256 bits, 488mb: 3650379.56
+-  Key Size 128 bits, 4847mb: 17538337.9
+-  Key Size 192 bits, 4847mb: 18002898.1
+-  Key Size 256 bits, 4847mb: 18941870.4
+-  Key Size 128 bits, 48806mb: 160729139
+-  Key Size 192 bits, 48806mb: 170324606
+-  Key Size 256 bits, 48806mb: 177232379
+-  Key Size 128 bits, 488251mb: 1842955246
+-  Key Size 192 bits, 488251mb: 1915574486
+-  Key Size 256 bits, 488251mb: 2003553130
+-  Key Size 128 bits, 1gb: 3990446810
+-  Key Size 192 bits, 1gb: 4109194555
+-  Key Size 256 bits, 1gb: 4437931231
+ 
+Decryption Average Times CBC
+-  Key Size 128 bits, 97mb: 1908712.89
+-  Key Size 192 bits, 97mb: 1907111
+-  Key Size 256 bits, 97mb: 1766180.67
+-  Key Size 128 bits, 488mb: 3862690
+-  Key Size 192 bits, 488mb: 5832259.22
+-  Key Size 256 bits, 488mb: 3830365.78
+-  Key Size 128 bits, 4847mb: 24483462.9
+-  Key Size 192 bits, 4847mb: 24023384.3
+-  Key Size 256 bits, 4847mb: 24326875.2
+-  Key Size 128 bits, 48806mb: 242390991
+-  Key Size 192 bits, 48806mb: 243966190
+-  Key Size 256 bits, 48806mb: 240976861
+-  Key Size 128 bits, 488251mb: 2866863176
+-  Key Size 192 bits, 488251mb: 2841926607
+-  Key Size 256 bits, 488251mb: 2909143023
+-  Key Size 128 bits, 1gb: 6280938125
+-  Key Size 192 bits, 1gb: 6321877371
+-  Key Size 256 bits, 1gb: 6401750653
+
+Encryption Average Times CTR
+-  Key Size 128 bits, 97mb: 1759101.89
+-  Key Size 192 bits, 97mb: 1920287.11
+-  Key Size 256 bits, 97mb: 1915638.89
+-  Key Size 128 bits, 488mb: 3389921.22
+-  Key Size 192 bits, 488mb: 3416972.33
+-  Key Size 256 bits, 488mb: 3347763.67
+-  Key Size 128 bits, 4847mb: 15806851.9
+-  Key Size 192 bits, 4847mb: 15801921.2
+-  Key Size 256 bits, 4847mb: 15564069.4
+-  Key Size 128 bits, 48806mb: 136180403
+-  Key Size 192 bits, 48806mb: 140980671
+-  Key Size 256 bits, 48806mb: 137434588
+-  Key Size 128 bits, 488251mb: 1636559343
+-  Key Size 192 bits, 488251mb: 1593743028
+-  Key Size 256 bits, 488251mb: 1584330361
+-  Key Size 128 bits, 1gb: 3418913458
+-  Key Size 192 bits, 1gb: 3441495505
+-  Key Size 256 bits, 1gb: 3444242009
+ 
+Decryption Average Times CTR
+-  Key Size 128 bits, 97mb: 1780750.11
+-  Key Size 192 bits, 97mb: 1751157.33
+-  Key Size 256 bits, 97mb: 1859875
+-  Key Size 128 bits, 488mb: 4331083.22
+-  Key Size 192 bits, 488mb: 4369759.44
+-  Key Size 256 bits, 488mb: 4244615.67
+-  Key Size 128 bits, 4847mb: 25858824.1
+-  Key Size 192 bits, 4847mb: 25774351.9
+-  Key Size 256 bits, 4847mb: 25485759.2
+-  Key Size 128 bits, 48806mb: 251058005
+-  Key Size 192 bits, 48806mb: 246412639
+-  Key Size 256 bits, 48806mb: 247972366
+-  Key Size 128 bits, 488251mb: 2915734185
+-  Key Size 192 bits, 488251mb: 2947201389
+-  Key Size 256 bits, 488251mb: 2879509074
+-  Key Size 128 bits, 1gb: 6259634565
+-  Key Size 192 bits, 1gb: 6265927236
+-  Key Size 256 bits, 1gb: 6296595750
+
+Encryption Average Times OFB
+-  Key Size 128 bits, 97mb: 1872610.89
+-  Key Size 192 bits, 97mb: 1926125.11
+-  Key Size 256 bits, 97mb: 2088574.22
+-  Key Size 128 bits, 488mb: 3652639
+-  Key Size 192 bits, 488mb: 3446537.22
+-  Key Size 256 bits, 488mb: 3503870.44
+-  Key Size 128 bits, 4847mb: 19722000
+-  Key Size 192 bits, 4847mb: 20312671.1
+-  Key Size 256 bits, 4847mb: 20774689.8
+-  Key Size 128 bits, 48806mb: 189217560
+-  Key Size 192 bits, 48806mb: 200413977
+-  Key Size 256 bits, 48806mb: 203885857
+-  Key Size 128 bits, 488251mb: 2142970824
+-  Key Size 192 bits, 488251mb: 2261482264
+-  Key Size 256 bits, 488251mb: 2263302894
+-  Key Size 128 bits, 1gb: 4648230435
+-  Key Size 192 bits, 1gb: 4888701569
+-  Key Size 256 bits, 1gb: 4842241292
+ 
+Decryption Average Times OFB
+-  Key Size 128 bits, 97mb: 1728689.89
+-  Key Size 192 bits, 97mb: 3619555.78
+-  Key Size 256 bits, 97mb: 1827379.78
+-  Key Size 128 bits, 488mb: 4256819.44
+-  Key Size 192 bits, 488mb: 4225472.22
+-  Key Size 256 bits, 488mb: 4379652.56
+-  Key Size 128 bits, 4847mb: 29681819.4
+-  Key Size 192 bits, 4847mb: 30410518.7
+-  Key Size 256 bits, 4847mb: 30859453.9
+-  Key Size 128 bits, 48806mb: 290254375
+-  Key Size 192 bits, 48806mb: 306926820
+-  Key Size 256 bits, 48806mb: 308282157
+-  Key Size 128 bits, 488251mb: 3429334375
+-  Key Size 192 bits, 488251mb: 3509933597
+-  Key Size 256 bits, 488251mb: 3611888084
+-  Key Size 128 bits, 1gb: 7509708199
+-  Key Size 192 bits, 1gb: 7610799185
+-  Key Size 256 bits, 1gb: 7733740102
+
+Encryption Average Times CFB
+-  Key Size 128 bits, 97mb: 1900495.56
+-  Key Size 192 bits, 97mb: 2196305.78
+-  Key Size 256 bits, 97mb: 2150166.78
+-  Key Size 128 bits, 488mb: 3663361.22
+-  Key Size 192 bits, 488mb: 3807750.11
+-  Key Size 256 bits, 488mb: 3938092.78
+-  Key Size 128 bits, 4847mb: 21557143.8
+-  Key Size 192 bits, 4847mb: 23947981.4
+-  Key Size 256 bits, 4847mb: 22353685.3
+-  Key Size 128 bits, 48806mb: 202156949
+-  Key Size 192 bits, 48806mb: 208820954
+-  Key Size 256 bits, 48806mb: 215718315
+-  Key Size 128 bits, 488251mb: 2259167194
+-  Key Size 192 bits, 488251mb: 2346499352
+-  Key Size 256 bits, 488251mb: 2410605180
+-  Key Size 128 bits, 1gb: 4907175005
+-  Key Size 192 bits, 1gb: 5054889643
+-  Key Size 256 bits, 1gb: 5123369134
+ 
+Decryption Average Times CFB
+-  Key Size 128 bits, 97mb: 1786245.56
+-  Key Size 192 bits, 97mb: 1989690.11
+-  Key Size 256 bits, 97mb: 3688935.11
+-  Key Size 128 bits, 488mb: 4301981.44
+-  Key Size 192 bits, 488mb: 4478925.78
+-  Key Size 256 bits, 488mb: 4350972
+-  Key Size 128 bits, 4847mb: 30750046.3
+-  Key Size 192 bits, 4847mb: 30965236.1
+-  Key Size 256 bits, 4847mb: 30975833.2
+-  Key Size 128 bits, 48806mb: 302937995
+-  Key Size 192 bits, 48806mb: 303130338
+-  Key Size 256 bits, 48806mb: 303624477
+-  Key Size 128 bits, 488251mb: 3328425139
+-  Key Size 192 bits, 488251mb: 3365450491
+-  Key Size 256 bits, 488251mb: 3416060204
+-  Key Size 128 bits, 1gb: 7325406379
+-  Key Size 192 bits, 1gb: 7463847629
+-  Key Size 256 bits, 1gb: 7302279260
+
+Encryption Average Times GCM
+-  Key Size 128 bits, 97mb: 2938495.44
+-  Key Size 192 bits, 97mb: 3155416.78
+-  Key Size 256 bits, 97mb: 2940671.22
+-  Key Size 128 bits, 488mb: 8362152.67
+-  Key Size 192 bits, 488mb: 8407231.56
+-  Key Size 256 bits, 488mb: 8426810.11
+-  Key Size 128 bits, 4847mb: 17526402.8
+-  Key Size 192 bits, 4847mb: 17325138.8
+-  Key Size 256 bits, 4847mb: 17683240.7
+-  Key Size 128 bits, 48806mb: 141194718
+-  Key Size 192 bits, 48806mb: 147722995
+-  Key Size 256 bits, 48806mb: 145899644
+-  Key Size 128 bits, 488251mb: 1669092611
+-  Key Size 192 bits, 488251mb: 1736330046
+-  Key Size 256 bits, 488251mb: 1694680750
+-  Key Size 128 bits, 1gb: 3605976088
+-  Key Size 192 bits, 1gb: 3594726347
+-  Key Size 256 bits, 1gb: 3700393810
+ 
+Decryption Average Times GCM
+-  Key Size 128 bits, 97mb: 2640523
+-  Key Size 192 bits, 97mb: 2744263.89
+-  Key Size 256 bits, 97mb: 2910069.44
+-  Key Size 128 bits, 488mb: 8827741
+-  Key Size 192 bits, 488mb: 8894625
+-  Key Size 256 bits, 488mb: 9055865.78
+-  Key Size 128 bits, 4847mb: 75567425.8
+-  Key Size 192 bits, 4847mb: 76165027.9
+-  Key Size 256 bits, 4847mb: 78712018.6
+-  Key Size 128 bits, 48806mb: 756219722
+-  Key Size 192 bits, 48806mb: 759129583
+-  Key Size 256 bits, 48806mb: 755822370
+-  Key Size 128 bits, 488251mb: 2626464833
+-  Key Size 192 bits, 488251mb: 2501412597
+-  Key Size 256 bits, 488251mb: 2517017246
+-  Key Size 128 bits, 1gb: 5419310028
+-  Key Size 192 bits, 1gb: 5612666356
+-  Key Size 256 bits, 1gb: 5373836204
+
