@@ -1,0 +1,159 @@
+LAB NUMBER: 2
+FULL NAME : thomas green
+STUDENT ID: 300536064
+--------------------------------------------------------------
+
+- Part One and Part Two are either done from watching the video or answering the question with the txt 	       file.
+
+- barretts% is the commands used followed by the outputs
+
+1. ENCRYPTION USING OPENSSL.
+  - List the commands used and provide the output from the commands.
+
+Part One
+	barretts% nano plaintext.txt
+	Thomas Green
+	300536064
+	^x
+	Y
+	Enter
+
+	barretts% cat plaintext.txt
+	Thomas Green
+	300536064
+
+	barretts% openssl enc -aes-256-ecb -pbkdf2 -in plaintext.txt -out plaintext1.txt -pass 			pass:mypassword 
+
+	barretts% cat plaintext1.txt
+	Salted__i??Ӗ?BߙEJ"آ??p?
+                       нQ*?_?)???s1cp% 
+
+Part Two
+	barretts% mkdir lab02
+	barretts% cd lab02
+	barretts% nano filename1
+
+	Thomas created this file.
+	This file was created by Thomas.
+	^x
+	y
+	Enter
+
+	barretts% cat filenamel
+	Thomas created this file.
+	This file was created by Thomas.
+
+	barretts% openssl enc -aes-256-ecb -pbkdf2 -in filename1 -out filename2 -pass pass:hell
+	[barretts% ls 
+	filename1 filename2
+
+	barretts% ls -l
+	total 8
+	-rW------ 1 greenthom students 59 Apr 2 21:24 filename1
+	-rW------ 1 greenthom students 80 Apr 2 21:25 filename2
+
+	cat filename2
+	Salted__X/嬢8??@T?4?:F?B??B??o?5+?????e?<\;%??ݤ?T???$t?)a?0?C??????,% 
+
+	The capital E on the salted line was something different but my computer couldn’t copy it
+
+
+
+2. DECRYPTION USING OPENSSL.
+  - List the commands used and provide the output from the commands.
+
+Part One
+	barretts% nano ciphertext.txt
+	barretts% cat ciphertext.txt
+	U2FsdGVkX19ANAevL860iGO5mR7ClWYsrsrDVAwhjLWYfzKnDi08Lw== 
+
+	barretts% openssl enc -base64 -d -in ciphertext.txt -out ciphertxt-binary
+	barretts% openssl enc -bf-cbc -provider legacy -provider default -pbkdf2 -d -in 		ciphertext.txt-binary -pass pass:yourpassword
+
+	barretts% cat ciphertext.txt-binary
+	Salted_@4?/_?c??_f,???T
+	!???2?-</
+
+	__ indicates parts that couldn’t be copied 
+
+Part Two
+	barretts% openssl enc -aes-256-ecb -pbkdf2 -d -in filename2 -pass pass:hello
+	Thomas created this file.
+	This file was created by Thomas
+	barretts% cat filename1
+	Thomas created this file.
+	This file was created by Thomas
+
+	barretts% openssl enc -aes-256-ecb -pbkdf2 -d -in filename2 -out filename3 -pass pass:hello
+	barretts% Is 
+	filename1 filename2 filename3
+	barretts% ls -1
+
+	total 12
+	-rw------1 greenthom students 59 Apr 2 21:24 filename1
+	-rw------1 greenthom students 80 Apr 2 21:25 filename2
+	-rw------1 greenthom students 59 Apr 2 21:30 filename3
+
+	barretts% cat filename3
+	Thomas created this file.
+	This file was created by Thomas.
+
+	barretts% openssl enc -base64 -in filename2 -out filename2-base64
+	barretts% cat filename2-base64
+	U2FsdGVkX1+cbB4j3P2+t/af2iWmdDrypAWa2rEp3cpPFr8dg8Ey6jft4zZp sbJo 					m6FS7RWW6gcAWSy133hvJX7W15RR14L11s0p3qK3WM=
+	barretts% cat filename2
+	Salted
+	.?1#???????%?t:??δ)??0???2?7?26i??h??R???Y,??E?[^QF^
+	?]
+	[4?z??0%
+
+	Same thing with the E thing copy and paste might be a bit off
+
+3. ENCRYPTION USING A PUBLIC KEY.
+  - List the commands used and provide the output from the commands.
+
+barretts% gpg --import bob-publickey.txt
+gpg: key 898ACD7A2D2D90FE: public key "Bobby <bob@ecs.vuw.ac.nz>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+barretts% gpg --list-keys
+/home/greenthom/.gnupg/pubring.kbx
+----------------------------------
+pub   rsa3072 2022-03-21 [SC] [expires: 2024-03-20]
+      789DFAF1F31613B1A6D921E7FCFC5FFB4D0CB8E4
+uid           [ unknown] CYBR171 ECS <cybr171@ecs.vuw.ac.nz>
+sub   rsa3072 2022-03-21 [E] [expires: 2024-03-20]
+
+pub   rsa3072 2023-03-18 [SC] [expires: 2025-03-17]
+      972BF230782111B09E648AC3898ACD7A2D2D90FE
+uid           [ unknown] Bobby <bob@ecs.vuw.ac.nz>
+sub   rsa3072 2023-03-18 [E] [expires: 2025-03-17]
+
+barretts% gpg --encrypt -r bob@ecs.vuw.ac.nz -a plaintext.txt
+gpg: 478C1805A03F7077: There is no assurance this key belongs to the named user
+
+sub  rsa3072/478C1805A03F7077 2023-03-18 Bobby <bob@ecs.vuw.ac.nz>
+ Primary key fingerprint: 972B F230 7821 11B0 9E64  8AC3 898A CD7A 2D2D 90FE
+      Subkey fingerprint: 0D05 902C F448 3B53 70E2  7C35 478C 1805 A03F 7077
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
+barretts% cat plaintext.txt.asc
+-----BEGIN PGP MESSAGE-----
+
+hQGMA0eMGAWgP3B3AQv8DYEfL68n17CWPeZ4xMCODsHUHkhsVA+vikdEHsBIPZBZ
+vL4QoXkQKw9Tb0cIDV7G9IJlhP4M1/j1NE+srlrvxD4tXk8FMko4DLnLftwqJTpB
+ffhp014NF9YlDJfVK5bkoXLboG694Ja6Ca90XBSEmGYzxaqIQFPX3iOmxar5MOYQ
+uR8GGVpOYl9je6LB6TnnM5ezpHDxGYaIPmYt0t5QVnl3m/ULHsV9O1tnUq1MW3Og
+HoGwt0uI+ZNq6GOyPApM1UhQh3qKYGB6msvA493lxIt7AeDD4wgpITckMe26f+3E
+zHQUYaQxoNUjvzZNNjy7xZpI37lj0RjBgC8W3iV+X/Vi3VFeg/rT4L4TR/uApo/0
+0iWH229XIFpoFAi/OdDS70xdH5BLBOJE6StidW9Tt9byULQIZB1+lH60fGnGJBgq
+K+6G57cAXy5t/YNqz7Mo4FQNKBqbq9xFObJIqkFmsIpaS86pe4dw0RDy8cY5tPbq
+LI/PBVJngQDtoFrVePHZ0mAB1VzBXGhQP24c41d6xpqbfpDS6FGajfG0F183dRsv
+YxsSxPam3uR6QiNSZeRnlP3lwJQeE7XZXvL+cn4lR6tqThyEgtUNjNNvPQTRUtZS
+9j0o1LcncroWpyTEs/PoJbA=
+=dxEW
+-----END PGP MESSAGE-----

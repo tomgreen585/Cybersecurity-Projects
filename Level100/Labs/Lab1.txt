@@ -1,0 +1,118 @@
+LAB EXERCISE 1 - 2023T1
+ 
+Please include the following in your lab writeup:
+  - Your full name and Student ID.
+  - Clearly labelled answers to the questions from "Exercises to Complete"
+  - Report is submitted in electronic form as a TXT file. 
+  - Includes the COMMANDS and the output.
+ 
+FULL NAME : Tom Green
+STUDENT ID: 300536064
+--------------------------------------------------------------
+ 
+1. Change your command prompt to show the server machine you are logged into and your current working directory.
+
+	Input: pwd
+	/home/greenthom
+	barretts%
+
+2. Use the ls command from the root (/) directory to explore the directory structure of Linux. Pick THREE directories under root to explore. Move to each of the directories with the cd command and run pwd to verify where you are in the directory structure.
+
+	First Directory
+
+	Input: cd /etc
+	Input: pwd
+	/etc
+	Input: ls
+
+	Input: cd unbound
+	Output: barretts /etc/ cd unbound %
+
+
+	Second Directory
+
+	Input: cd /etc
+	Input: pwd
+	/etc
+	Input: ls
+
+	Input: cd sound
+	Output: barretts /etc/ sound %
+
+	Third Directory
+
+	Input: cd /boot
+	Input: pwd
+	/boot
+	Input: ls
+
+	Input: barretts /boot % cd grub
+	Output barretts /boot/grub %
+
+3. Use the whoami command to verify which user you are logged in as.
+
+	Input: barretts% whoami
+	Output: greenthom
+
+4. Change your working directory to the lab01 directory you created earlier. Create a new directory called hackerdirectory within it and create a new file in that directory named hackedfile. Now copy that file to your home directory and rename it secretfile.
+
+	Input: mkdir lab01
+       	       cd lab01
+ 
+	Input: pwd
+ 
+	Output: /home/greenthom/lab01
+ 
+	Input: mkdir hackerdirectory 
+ 
+	Input: cat > hackedfile
+ 
+	Input: cp hackedfile secretfile
+
+
+
+5. Change your working directory to the lab01 directory you created earlier. Download the file located at https://www.gutenberg.org/files/36/36-0.txt. Display the first sixteen and last five lines.
+
+
+
+	Input: curl -0 https://www.gutenberg.org/files/36/36-0.txt
+	Output: % Total % Received % Xferd  Average Speed   Time    Time     Time  Current
+	                                 Dload  Upload   Total   Spent    Left  Speed
+			100  357k  100  357k    0     0   213k      0  0:00:01  0:00:01 --:--:--  			213k
+
+	Input:  head --lines=16 36-0.txt
+	Output: The Project Gutenberg eBook of The War of the Worlds, by H. G. Wells
+
+			This eBook is for the use of anyone anywhere in the United States and
+			most other parts of the world at no cost and with almost no restrictions
+			whatsoever. You may copy it, give it away or re-use it under the terms
+			of the Project Gutenberg License included with this eBook or online at
+			www.gutenberg.org. If you are not located in the United States, you
+			will have to check the laws of the country where you are located before
+			using this eBook.
+	
+			Title: The War of the Worlds
+
+			Author: H. G. Wells
+
+			Release Date: July 1992 [eBook #36]
+			[Most recently updated: November 27, 2021]
+
+	Input: tail --lines=5 36-0.txt 
+	Output: "including how to make donations to the Project Gutenberg Literary
+		Archive Foundation, how to help produce our new eBooks, and how to
+		subscribe to our email newsletter to hear about new eBooks."
+
+
+
+
+6. Create a hidden file in the lab01 directory containing the phrase "You can't find me". Use the ls and cat commands to show that it exists. 
+
+
+	Input: cat > hidden 
+	       mv hidden .hidden 
+	       ls 
+	       directory lab01
+	       ls -a
+	       you can't find me .hidden .txt 
+	       cat .hidden
