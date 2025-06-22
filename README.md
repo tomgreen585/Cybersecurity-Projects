@@ -1,4 +1,4 @@
-# VUW CYBRSECURITY ASSIGNMENTS
+# VUW Cybersecurity Assigments
 
 ## CyberSecurity Subjects Taken
 
@@ -7,3 +7,5 @@
 - CYBR371
 - CYBR372
 - CYBR373
+- CYBR472
+- CYBR473
