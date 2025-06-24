@@ -1,6 +1,6 @@
 # VUW Cybersecurity Assigments
 
-## CyberSecurity Subjects Taken
+## Cybersecurity Subjects Taken
 
 - CYBR171
 - CYBR271
